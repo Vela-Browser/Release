@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vela Browser: a calm, customizable desktop browser</title>
+<meta name="description" content="Vela is a calm and customizable desktop web browser for Windows with profiles, themes, a built-in ad blocker, a password manager, an AI assistant and friends chat.">
+<style>
+  :root { --bg: #f6f7fb; --card: #ffffff; --ink: #1b2233; --muted: #5d667a; --line: #e3e6ef; --accent: #d9552b; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #151a27; --card: #1e2536; --ink: #eef1f8; --muted: #a2abc0; --line: #2d364b; } }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font: 16px/1.6 system-ui, "Segoe UI", sans-serif; background: var(--bg); color: var(--ink); }
+  a { color: var(--accent); }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+  header.top { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+  .brand { font-weight: 800; font-size: 1.25rem; letter-spacing: .02em; text-decoration: none; color: var(--ink); }
+  nav a { margin-left: 18px; text-decoration: none; color: var(--muted); font-weight: 500; }
+  nav a:hover { color: var(--ink); }
+  .hero { text-align: center; padding: 64px 0 48px; }
+  .hero h1 { font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.1; margin: 0 0 16px; }
+  .hero p { max-width: 560px; margin: 0 auto 28px; color: var(--muted); font-size: 1.1rem; }
+  .btn { display: inline-block; padding: 12px 26px; border-radius: 999px; background: var(--accent); color: #fff; font-weight: 600; text-decoration: none; }
+  .btn.alt { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--line); margin-left: 8px; }
+  section { padding: 40px 0; }
+  h2 { font-size: 1.6rem; margin: 0 0 18px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  .policy h3 { margin: 22px 0 6px; font-size: 1.1rem; }
+  .policy p, .policy li { color: var(--muted); }
+  .note { font-size: .9rem; color: var(--muted); }
+  footer { padding: 30px 0 50px; text-align: center; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); margin-top: 30px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#">Vela</a>
+    <nav><a href="#features">Features</a><a href="#download">Download</a><a href="#privacy">Privacy</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <div class="hero">
+    <h1>A calm, customizable browser for your desktop</h1>
+    <p>Vela is a desktop web browser for Windows. Make it look and feel the way you like, keep your passwords safe, block ads, get quick help from an assistant and chat with friends, all in one place.</p>
+    <a class="btn" href="#download">Download for Windows</a><a class="btn alt" href="#features">See features</a>
+  </div>
+
+  <section id="features">
+    <h2>What Vela does</h2>
+    <div class="grid">
+      <div class="card"><h3>Profiles</h3><p>Keep browsing for work, home and friends separate, each with its own picture, banner, bookmarks and history. Profiles can be protected with a password or authenticator code.</p></div>
+      <div class="card"><h3>Make it yours</h3><p>Pick a theme and accent colour, switch the layout, tab style, fonts and spacing, or apply a quick look in one click.</p></div>
+      <div class="card"><h3>Ad blocker</h3><p>A built-in ad blocker helps keep pages cleaner and faster.</p></div>
+      <div class="card"><h3>Password manager</h3><p>Save and fill logins from an encrypted vault on your own computer.</p></div>
+      <div class="card"><h3>AI assistant</h3><p>Ask questions, summarize the page you are reading, and attach images or files for help.</p></div>
+      <div class="card"><h3>Social</h3><p>Follow people, become friends, send messages and create group chats with invite links.</p></div>
+    </div>
+  </section>
+
+  <section id="download">
+    <h2>Download</h2>
+    <div class="card">
+      <p><b>Vela for Windows</b></p>
+      <p class="note">Windows 10 or later. Installer coming soon. Replace this text with your download link when it is ready.</p>
+      <p style="margin-top:14px"><a class="btn" href="#">Download Vela (coming soon)</a></p>
+    </div>
+  </section>
+
+  <section id="privacy" class="policy">
+    <h2>Privacy policy</h2>
+    <p class="note">Last updated: November 2026</p>
+    <p>Vela is built to keep your browsing on your own computer. This page explains what information the app and this website handle.</p>
+
+    <h3>Information stored on your device</h3>
+    <p>Your profiles, bookmarks, history, settings, saved passwords and downloads are stored locally on your computer. Saved passwords are kept in an encrypted vault. We do not receive or collect this data.</p>
+
+    <h3>AI assistant</h3>
+    <p>When you use the AI assistant, the text you type, any files or images you attach, and (only if you turn it on) the content of the page you are reading are sent to the AI service that provides the answers, so it can respond. Do not send sensitive information to the assistant if you are not comfortable with that.</p>
+
+    <h3>Social features</h3>
+    <p>Social features are optional. If you create a Vela Social account, your username, display name, profile picture and banner, bio, follows, friends and messages are stored on the Vela Social server you connect to. Whoever runs that server can access this data. Do not share passwords or other secrets in messages.</p>
+
+    <h3>Advertising</h3>
+    <p>Vela may show clearly labelled sponsored content on its start page, supplied by third-party advertising networks. These networks may collect technical information such as your IP address, device and browser details, and may use cookies or similar technologies, under their own privacy policies. You can hide sponsored content in the browser settings. We do not sell your browsing history, because we do not collect it.</p>
+
+    <h3>This website</h3>
+    <p>This website is a simple informational page. It may show advertising from third-party networks, which may collect the technical information described above.</p>
+
+    <h3>Children</h3>
+    <p>Vela is not directed at children under 13, and we do not knowingly collect their information.</p>
+
+    <h3>Changes</h3>
+    <p>If this policy changes, we will update the date at the top of this section.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card"><p>Questions, bugs or privacy requests: <a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a></p></div>
+  </section>
+
+  <footer>&copy; 2026 Vela. All rights reserved.</footer>
+</div>
+</body>
+</html>
